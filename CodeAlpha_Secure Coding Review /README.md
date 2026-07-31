@@ -1,102 +1,56 @@
+# CodeAlpha - Secure Coding Review
 
-# Secure Coding Review Report
+## Internship
+CodeAlpha Cyber Security Internship
+
+## Task
+Task 3 - Secure Coding Review
 
 ## Submitted By
-
 M MOHAMED ANAS
 
 ---
 
-# Objective
+## Project Description
 
-To identify security vulnerabilities in an application and provide secure coding recommendations.
-
----
-
-# Application Reviewed
-
-Python Login Authentication System
+This project demonstrates how insecure coding practices can expose applications to security risks. An insecure login system is reviewed, vulnerabilities are identified, and a secure version is implemented following cybersecurity best practices.
 
 ---
 
-# Vulnerabilities
+## Project Files
 
-## 1. Plain Text Password Storage
-
-Risk:
-If the source code is leaked, all passwords become visible.
-
-Severity:
-High
-
-Recommendation:
-Store passwords using hashing algorithms.
+- insecure_login.py
+- secure_login.py
+- REPORT.md
 
 ---
 
-## 2. No Password Encryption
+## Vulnerabilities Identified
 
-Risk:
-Attackers can easily steal credentials.
-
-Severity:
-High
-
-Recommendation:
-Use SHA-256, bcrypt or Argon2.
+- Plain text passwords
+- No password hashing
+- Weak authentication
+- No input validation
+- No logging
+- No account lockout
 
 ---
 
-## 3. No Input Validation
+## Security Improvements
 
-Risk:
-Unexpected inputs may affect application behavior.
-
-Severity:
-Medium
-
-Recommendation:
-Validate all user inputs.
+- SHA-256 password hashing
+- Input validation
+- Better authentication logic
+- Secure coding recommendations
 
 ---
 
-## 4. No Logging
+## Programming Language
 
-Risk:
-Failed login attempts cannot be monitored.
-
-Severity:
-Medium
-
-Recommendation:
-Maintain authentication logs.
+Python 3
 
 ---
 
-## 5. No Account Lockout
+## Author
 
-Risk:
-Allows brute-force attacks.
-
-Severity:
-High
-
-Recommendation:
-Lock the account after multiple failed attempts.
-
----
-
-# Security Best Practices
-
-- Use strong passwords.
-- Enable Multi-Factor Authentication.
-- Never store passwords in plain text.
-- Validate user input.
-- Use HTTPS.
-- Perform regular security audits.
-
----
-
-# Conclusion
-
-The insecure login system contains several security weaknesses. The secure version follows better authentication practices and significantly improves application security.
+M MOHAMED ANAS
