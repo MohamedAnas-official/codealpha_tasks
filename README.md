@@ -4,6 +4,6 @@ This repository contains the tasks completed during my CodeAlpha Cybersecurity I
 
 ## Tasks
 - Phishing Awareness Training
- Secure Coding Review
+- Secure Coding Review
 
 
